@@ -302,4 +302,8 @@
 
 + (id)new UNAVAILABLE_ATTRIBUTE;
 - (id)init UNAVAILABLE_ATTRIBUTE;
+
+//JJR
+- (NSDictionary*) asDictionary;
+
 @end

@@ -53,6 +53,11 @@
   [self.fieldInclExcl removeAllObjects];
 }
 
+//JJR
+- (void)direct:(NSDictionary*)map {
+    self.queryMap=[map mutableCopy];
+}
+
 - (DKQuery *)or {
   return [DKQueryConditionProxy proxyForQuery:self conditionArray:self.ors];
 }
@@ -228,6 +233,7 @@
     requestDict[@"$skip"] = @(self.skip);
   }
   
+//    NSLog(@"deployd: %@",requestDict);
   NSMutableString * queryParams = [NSMutableString stringWithString:self.entityName];
   if (countOut != NULL) {
       [queryParams appendString:@"/count"];

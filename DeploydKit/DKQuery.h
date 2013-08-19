@@ -20,6 +20,9 @@
  */
 @interface DKQuery : NSObject
 
+//JJR
+- (void)direct:(NSDictionary*)map;
+
 /** @name Options */
 
 /**
@@ -130,7 +133,7 @@
  (NOT WORK, NOT DOCUMENTED IN DEPLOYD 0.6.9v, MAY WORK IN FUTURE VERSIONS) 
  @return and The AND proxy object.
  */
-//- (DKQuery *)and;
+- (DKQuery *)and;
 
 /** @name Conditions */
 

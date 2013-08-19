@@ -229,6 +229,12 @@
   return obj;
 }
 
+//JJR
+- (NSDictionary*) asDictionary
+{
+    return self.resultMap;
+}
+
 - (void)setObject:(id)object forKey:(NSString *)key {
   (self.setMap)[key] = object;
 }
